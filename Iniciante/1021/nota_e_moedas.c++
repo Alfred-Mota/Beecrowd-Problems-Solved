@@ -1,4 +1,12 @@
 #include <iostream>
+#include <cstdint>
+
+/**
+ * Para printar um unit8_t deve-se converter para (int), se nao pode ser interpretado como char.
+ * Na prática, uint8_t costuma ser um apelido de unsigned char, então:
+ * uint8_t x = 65;
+ * cout << x << endl; --> 'A'
+ */
 
 int main(){
     uint8_t notas[6] = {100, 50, 20, 10, 5, 2};
@@ -12,9 +20,9 @@ int main(){
     
     std::cout << "NOTAS" <<"\n";
     for(int i=0; i<6;i++){
-        int nota = notas[i];
-        resto = (int)(money / nota);
-        std::cout << resto << " nota(s) de R$ "<< nota <<"\n";
+        uint8_t nota = notas[i];
+        resto = (uint8_t)(money / nota);
+        std::cout << (int)resto << " nota(s) de R$ "<< (int)nota <<"\n";
         acc = acc + resto*nota;
         money = money - resto*nota;
     }
@@ -22,8 +30,8 @@ int main(){
     std::cout << "MOEDAS" <<"\n";
     for(int i=0; i<6;i++){
         float moeda = moedas[i];
-        resto = (int)(money / moeda);
-        std::cout << resto << " moeda(s) de R$ "<< moeda <<"\n";
+        resto = (uint8_t)(money / moeda);
+        std::cout << (int)resto << " moeda(s) de R$ "<< moeda <<"\n";
         money = money - resto*moeda;
     }
 
