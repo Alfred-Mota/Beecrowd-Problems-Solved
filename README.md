@@ -6,7 +6,7 @@ As soluções estão organizadas por categoria e foram desenvolvidas principalme
 
 ## 📊 Progresso
 
-Atualmente, o repositório possui **12 exercícios resolvidos**.
+Atualmente, o repositório possui **13 exercícios resolvidos**.
 
 ## 📚 Exercícios resolvidos
 
@@ -22,6 +22,7 @@ Atualmente, o repositório possui **12 exercícios resolvidos**.
 
 * 1003
 * 1021
+* 1002
 
 **Python**
 
