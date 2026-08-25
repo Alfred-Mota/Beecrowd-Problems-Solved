@@ -8,6 +8,8 @@ int main(){
         
     for (size_t i = 0; i < 4; i++)
     {
+        //Bloqueia ate a entrada dos proximos valores
+        //impedindo print min apos a primeira execução
          scanf("%d",&values[i]); 
     }
 
